@@ -1,5 +1,5 @@
 FROM node:latest
-ENV API_KEY=sk-live-demo-please-remove
+# API_KEY must be supplied at runtime
 RUN curl -fsSL https://install.example.com/setup.sh | sh
 COPY . /app
 CMD ["node", "server.js"]
